@@ -1,0 +1,16 @@
+{% extends 'main\_base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<h1>Главная страница</h1>
+{% for task in tasks %}
+<div class="alert alert-warning mt-2">
+    <h3> {{ task.title }} </h3>
+    <p> {{ task.description }} </p>
+</div>
+
+{% endfor %}
+{% endblock %}
