@@ -1,0 +1,22 @@
+{% extends 'main\_base.html' %}
+
+{% block title %}Новости на сайте{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Новости на сайте</h1>
+    {% for item in news %}
+    <div class="alert alert-primary" role="alert">
+        <strong>
+            {{ item.title}} <br>
+        </strong>
+        {{ item.anons}} <br><br>
+        <a href="{% url 'detail_view' item.id %}" class="btn btn-warning">Читать детальнее</a>
+    </div>
+
+
+    {% endfor %}
+
+    <button class="btn btn-warning">На страницу про нас</button>
+</div>
+{% endblock %}
