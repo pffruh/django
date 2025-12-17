@@ -27,4 +27,4 @@ urlpatterns = [
     path('news/', include('news.urls')),
 ]
 # ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-#1
+#123421342134asdfsadfsadfdsfgdsfg
