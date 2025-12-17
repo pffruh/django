@@ -27,4 +27,4 @@ urlpatterns = [
     path('news/', include('news.urls')),
 ]
 # ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-#commit 4
+#test commit
